@@ -8,10 +8,15 @@
 
 /* Begin PBXBuildFile section */
 		2C13365428D8BC5B00D2D1D6 /* Step10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13364428D8BC5A00D2D1D6 /* Step10App.swift */; };
+		2C13365528D8BC5B00D2D1D6 /* Step10App.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13364428D8BC5A00D2D1D6 /* Step10App.swift */; };
 		2C13365628D8BC5B00D2D1D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13364528D8BC5A00D2D1D6 /* ContentView.swift */; };
+		2C13365728D8BC5B00D2D1D6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13364528D8BC5A00D2D1D6 /* ContentView.swift */; };
 		2C13365828D8BC5B00D2D1D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C13364628D8BC5B00D2D1D6 /* Assets.xcassets */; };
+		2C13365928D8BC5B00D2D1D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2C13364628D8BC5B00D2D1D6 /* Assets.xcassets */; };
 		2C13366428D8BD0D00D2D1D6 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13366328D8BD0D00D2D1D6 /* PurchaseManager.swift */; };
+		2C13366528D8BD0D00D2D1D6 /* PurchaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13366328D8BD0D00D2D1D6 /* PurchaseManager.swift */; };
 		2C13366728D8BD1600D2D1D6 /* EntitlementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13366628D8BD1600D2D1D6 /* EntitlementManager.swift */; };
+		2C13366828D8BD1600D2D1D6 /* EntitlementManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C13366628D8BD1600D2D1D6 /* EntitlementManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,14 +24,22 @@
 		2C13364528D8BC5A00D2D1D6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		2C13364628D8BC5B00D2D1D6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2C13364B28D8BC5B00D2D1D6 /* Step10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C13365128D8BC5B00D2D1D6 /* Step10.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Step10.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2C13365328D8BC5B00D2D1D6 /* macOS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = macOS.entitlements; sourceTree = "<group>"; };
 		2C13366228D8BCF700D2D1D6 /* Step10Configuration.storekit */ = {isa = PBXFileReference; lastKnownFileType = text; path = Step10Configuration.storekit; sourceTree = "<group>"; };
 		2C13366328D8BD0D00D2D1D6 /* PurchaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PurchaseManager.swift; sourceTree = "<group>"; };
 		2C13366628D8BD1600D2D1D6 /* EntitlementManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntitlementManager.swift; sourceTree = "<group>"; };
-		C564D8102A5DA110004BF0FB /* IOSMidnightSubscription */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = IOSMidnightSubscription; path = "../../../../../Desktop/untitled folder 4/IOSMidnightSubscription"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		2C13364828D8BC5B00D2D1D6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C13364E28D8BC5B00D2D1D6 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -39,9 +52,9 @@
 		2C13363E28D8BC5A00D2D1D6 = {
 			isa = PBXGroup;
 			children = (
-				C564D80F2A5DA110004BF0FB /* Packages */,
 				2C13366228D8BCF700D2D1D6 /* Step10Configuration.storekit */,
 				2C13364328D8BC5A00D2D1D6 /* Shared */,
+				2C13365228D8BC5B00D2D1D6 /* macOS */,
 				2C13364C28D8BC5B00D2D1D6 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -62,16 +75,17 @@
 			isa = PBXGroup;
 			children = (
 				2C13364B28D8BC5B00D2D1D6 /* Step10.app */,
+				2C13365128D8BC5B00D2D1D6 /* Step10.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		C564D80F2A5DA110004BF0FB /* Packages */ = {
+		2C13365228D8BC5B00D2D1D6 /* macOS */ = {
 			isa = PBXGroup;
 			children = (
-				C564D8102A5DA110004BF0FB /* IOSMidnightSubscription */,
+				2C13365328D8BC5B00D2D1D6 /* macOS.entitlements */,
 			);
-			name = Packages;
+			path = macOS;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +108,23 @@
 			productReference = 2C13364B28D8BC5B00D2D1D6 /* Step10.app */;
 			productType = "com.apple.product-type.application";
 		};
+		2C13365028D8BC5B00D2D1D6 /* Step10 (macOS) */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2C13365F28D8BC5B00D2D1D6 /* Build configuration list for PBXNativeTarget "Step10 (macOS)" */;
+			buildPhases = (
+				2C13364D28D8BC5B00D2D1D6 /* Sources */,
+				2C13364E28D8BC5B00D2D1D6 /* Frameworks */,
+				2C13364F28D8BC5B00D2D1D6 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Step10 (macOS)";
+			productName = "Step10 (macOS)";
+			productReference = 2C13365128D8BC5B00D2D1D6 /* Step10.app */;
+			productType = "com.apple.product-type.application";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -105,6 +136,9 @@
 				LastUpgradeCheck = 1340;
 				TargetAttributes = {
 					2C13364A28D8BC5B00D2D1D6 = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					2C13365028D8BC5B00D2D1D6 = {
 						CreatedOnToolsVersion = 13.4.1;
 					};
 				};
@@ -123,6 +157,7 @@
 			projectRoot = "";
 			targets = (
 				2C13364A28D8BC5B00D2D1D6 /* Step10 (iOS) */,
+				2C13365028D8BC5B00D2D1D6 /* Step10 (macOS) */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +168,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C13365828D8BC5B00D2D1D6 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C13364F28D8BC5B00D2D1D6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C13365928D8BC5B00D2D1D6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -147,6 +190,17 @@
 				2C13366428D8BD0D00D2D1D6 /* PurchaseManager.swift in Sources */,
 				2C13365428D8BC5B00D2D1D6 /* Step10App.swift in Sources */,
 				2C13366728D8BD1600D2D1D6 /* EntitlementManager.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		2C13364D28D8BC5B00D2D1D6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2C13365728D8BC5B00D2D1D6 /* ContentView.swift in Sources */,
+				2C13366528D8BD0D00D2D1D6 /* PurchaseManager.swift in Sources */,
+				2C13365528D8BC5B00D2D1D6 /* Step10App.swift in Sources */,
+				2C13366828D8BD1600D2D1D6 /* EntitlementManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -323,6 +377,62 @@
 			};
 			name = Release;
 		};
+		2C13366028D8BC5B00D2D1D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QM22M77CL6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Midnight.Appurify;
+				PRODUCT_NAME = Step10;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		2C13366128D8BC5B00D2D1D6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = macOS/macOS.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QM22M77CL6;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 12.3;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = Midnight.Appurify;
+				PRODUCT_NAME = Step10;
+				SDKROOT = macosx;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -340,6 +450,15 @@
 			buildConfigurations = (
 				2C13365D28D8BC5B00D2D1D6 /* Debug */,
 				2C13365E28D8BC5B00D2D1D6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		2C13365F28D8BC5B00D2D1D6 /* Build configuration list for PBXNativeTarget "Step10 (macOS)" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				2C13366028D8BC5B00D2D1D6 /* Debug */,
+				2C13366128D8BC5B00D2D1D6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

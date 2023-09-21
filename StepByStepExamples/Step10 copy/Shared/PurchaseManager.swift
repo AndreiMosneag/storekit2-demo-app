@@ -2,7 +2,7 @@
 //  PurchaseManager.swift
 //  Step10
 //
-//  Created by Mosenag Andrei on 11/07/23.
+//  Created by Josh Holtz on 9/19/22.
 //
 
 import Foundation
@@ -81,7 +81,7 @@ class PurchaseManager: NSObject, ObservableObject {
 
     // MARK: Private
 
-    private let productIds = ["set_999_1y", "set_099_1M"]
+    private let productIds = ["pro_monthly", "pro_yearly", "pro_lifetime"]
 
     private let entitlementManager: EntitlementManager
     private var productsLoaded = false
@@ -111,28 +111,11 @@ class PurchaseManager: NSObject, ObservableObject {
 
 extension PurchaseManager: SKPaymentTransactionObserver {
     func paymentQueue(_ queue: SKPaymentQueue, updatedTransactions transactions: [SKPaymentTransaction]) {
-        for transaction in transactions {
-            switch transaction.transactionState {
-            case .purchased:
-                // Unlock premium features, finish transaction
-                break
-            case .failed:
-                // Handle failure, finish transaction
-                break
-            case .restored:
-                // Restore premium features, finish transaction
-                break
-            case .deferred, .purchasing:
-                break
-            @unknown default:
-                break
-            }
-        }
+        // Handle transaction updates here
     }
 
     func paymentQueue(_ queue: SKPaymentQueue, shouldAddStorePayment payment: SKPayment, for product: SKProduct) -> Bool {
-        // Allow store payment
+        // Decide if the payment should be added to the queue
         return true
     }
 }
-

@@ -2,11 +2,10 @@
 //  Step10App.swift
 //  Shared
 //
-//  Created by Mosenag Andrei on 11/07/23.
+//  Created by Josh Holtz on 9/19/22.
 //
 
 import SwiftUI
-
 
 @main
 struct Step10App: App {

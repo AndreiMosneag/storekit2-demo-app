@@ -2,12 +2,11 @@
 //  ContentView.swift
 //  Shared
 //
-//  Created by Mosenag Andrei on 11/07/23.
+//  Created by Josh Holtz on 9/19/22.
 //
 
 import StoreKit
 import SwiftUI
-import IOSMidnightSubscription
 
 struct ContentView: View {
     
